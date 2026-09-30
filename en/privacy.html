@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy policy – Parapara</title>
+<link rel="icon" href="../assets/favicon-32.png">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<main class="doc">
+  <p><a href="./">← Parapara</a> · <a href="../privacy.html">日本語</a></p>
+  <h1>Privacy policy</h1>
+  <p class="meta">Applies to the Chrome extension “Parapara” / Effective date: <span class="todo">set on release</span></p>
+
+  <h2>1. Summary</h2>
+  <p>Parapara helps you speed-read the text of the web page or PDF you are viewing by showing it a few words at a time. All processing happens on your computer. Nothing you read is sent to the developer or any third party. There is no account, no analytics and no advertising.</p>
+
+  <h2>2. What is handled and where it is stored</h2>
+  <ul>
+    <li><strong>Text you read (website content)</strong>: when you start the extension on a page, it reads the main text to display it. The text is discarded afterwards and never stored.</li>
+    <li><strong>Resume records (part of browsing history)</strong>: the page URL (without query string), a hash computed from the text, and your reading position are stored on your computer (chrome.storage.local) so you can continue later. The text itself is not included. The number of records is capped; the oldest are removed first.</li>
+    <li><strong>Settings</strong>: stored in chrome.storage.sync. If Chrome sync is on, Chrome syncs them across browsers signed in to the same Google account.</li>
+    <li><strong>Error log</strong>: for troubleshooting, the error type, where it occurred and a shortened exception message are stored on your computer, with a cap on the number of entries. It never contains page text or URLs and is never sent automatically; you can copy it from the settings screen.</li>
+  </ul>
+
+  <h2>3. How permissions are used</h2>
+  <ul>
+    <li><strong>activeTab and scripting</strong>: temporary access to the tab where you start the extension (shortcut or toolbar icon), to read the main text and show the reading card. The extension has no standing access to your sites.</li>
+    <li><strong>storage</strong>: stores the records and settings described above.</li>
+    <li><strong>sidePanel</strong>: the side panel for reading pasted text and PDF files.</li>
+  </ul>
+
+  <h2>4. Sharing</h2>
+  <p>The developer never receives this information, and it is never shared with or sold to third parties.</p>
+
+  <h2>5. Support link</h2>
+  <p>The “Support development” link in the settings screen and on this site opens a Ko-fi page (OFUSE in the Japanese version) in a new tab. The extension does not communicate with these services. Their own privacy policies apply to the pages they serve.</p>
+
+  <h2>6. Deleting your data</h2>
+  <ul>
+    <li>Use “Delete all history” in the settings screen to remove all resume records. Turn off “Remember where I stopped so I can resume” to stop recording.</li>
+    <li>Use “Clear error log” to remove the error log.</li>
+    <li>Removing the extension from Chrome deletes all records and settings on your computer.</li>
+  </ul>
+
+  <h2>7. Changes and contact</h2>
+  <p>Changes to this policy will be posted on this page. Contact: <span class="todo">add contact</span></p>
+</main>
+</body>
+</html>
