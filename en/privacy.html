@@ -22,6 +22,7 @@
     <li><strong>Resume records (part of browsing history)</strong>: the page URL (without query string), a hash computed from the text, and your reading position are stored on your computer (chrome.storage.local) so you can continue later. The text itself is not included. The number of records is capped; the oldest are removed first.</li>
     <li><strong>Settings</strong>: stored in chrome.storage.sync. If Chrome sync is on, Chrome syncs them across browsers signed in to the same Google account.</li>
     <li><strong>Error log</strong>: for troubleshooting, the error type, where it occurred and a shortened exception message are stored on your computer, with a cap on the number of entries. It never contains page text or URLs and is never sent automatically; you can copy it from the settings screen.</li>
+    <li><strong>Support suggestion record</strong>: only the number of texts you have finished and whether you chose “Don’t show this again” are stored on your computer (chrome.storage.local). They are used to show a support suggestion once in a while after you finish reading. No text or URL is included.</li>
   </ul>
 
   <h2>3. How permissions are used</h2>
@@ -35,12 +36,13 @@
   <p>The developer never receives this information, and it is never shared with or sold to third parties.</p>
 
   <h2>5. Support link</h2>
-  <p>The “Support development” link in the settings screen and on this site opens a Ko-fi page (OFUSE in the Japanese version) in a new tab. The extension does not communicate with these services. Their own privacy policies apply to the pages they serve.</p>
+  <p>The “Support development” link in the settings screen and on this site, and the link in the support suggestion occasionally shown after you finish reading, open a Ko-fi page (OFUSE in the Japanese version) in a new tab. The extension does not communicate with these services. Their own privacy policies apply to the pages they serve.</p>
 
   <h2>6. Deleting your data</h2>
   <ul>
     <li>Use “Delete all history” in the settings screen to remove all resume records. Turn off “Remember where I stopped so I can resume” to stop recording.</li>
     <li>Use “Clear error log” to remove the error log.</li>
+    <li>Use the “×” on the support suggestion to stop showing it.</li>
     <li>Removing the extension from Chrome deletes all records and settings on your computer.</li>
   </ul>
 
