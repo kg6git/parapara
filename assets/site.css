@@ -16,6 +16,7 @@ a{color:inherit}
 .btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none}
 .btn.primary{background:#fff;color:var(--ai-deep)}
 .btn.soon{background:rgba(255,255,255,.18);color:#fff;cursor:default}
+.hero p.note{margin:14px 0 0;font-size:13px;line-height:1.7;opacity:.85;max-width:44em}
 section{padding:48px 0}
 h2{font-size:26px;margin:0 0 20px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
